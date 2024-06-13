@@ -1,0 +1,7 @@
+FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
+    initWithGraphPath:@"/me"
+           parameters:@{ @"fields": @"id,name",@"hey": @"808",}
+           HTTPMethod:@"POST"];
+[request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+    // Insert your code here
+}];
